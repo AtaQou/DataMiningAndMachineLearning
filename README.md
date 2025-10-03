@@ -115,7 +115,7 @@ Produces: data_clustered_agglomerative.csv
 
 Note: For very large data, these steps can use a lot of memory. If you hit limits, reduce the number of clusters or subsample size inside the scripts.
 
-## What the results mean (plain language)
+## What the results mean 
 
 - We train two simple models:
   - SVM (Support Vector Machine)
