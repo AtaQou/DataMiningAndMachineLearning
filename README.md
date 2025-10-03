@@ -31,46 +31,55 @@ Tip: If a script looks for data.csv but you only have data_sampled.csv, you can 
 1) Get the code
 ```
 
-bash git clone https://github.com/AtaQou/DataMiningAndMachineLearning.git cd DataMiningAndMachineLearning``` 
+bash git clone https://github.com/AtaQou/DataMiningAndMachineLearning.git cd DataMiningAndMachineLearning
+``` 
 
 2) Create a virtual environment and activate it
 - macOS/Linux:
 ```
 
-bash python3 -m venv venv source venv/bin/activate``` 
+bash python3 -m venv venv source venv/bin/activate
+``` 
 - Windows (PowerShell):
 ```
 
-bash python -m venv venv venv\Scripts\Activate.ps1``` 
+bash python -m venv venv venv\Scripts\Activate.ps1
+``` 
 
 3) Install dependencies
 ```
 
-bash pip install --upgrade pip pip install -r requirements.txt``` 
+bash pip install --upgrade pip pip install -r requirements.txt
+``` 
 
 4) Explore the sample data (creates and saves some charts)
 ```
 
-bash python SmallAnalysis.py``` 
+bash python SmallAnalysis.py
+``` 
 or a fuller (more verbose) analysis:
 ```
 
-bash python analysis.py``` 
+bash python analysis.py
+``` 
 
 5) Generate a correlation heatmap
 ```
 
-bash python corolationheatmap.py``` 
+bash python corolationheatmap.py
+``` 
 - This opens a window with the heatmap (if your environment supports it).
 - To save it to a file instead of showing it, replace the final line in the script with:
 ```
 
-python plt.savefig("correlation_heatmap.png", dpi=200, bbox_inches="tight") plt.close()``` 
+python plt.savefig("correlation_heatmap.png", dpi=200, bbox_inches="tight") plt.close()
+```
 
 6) Train and evaluate the models (if clustered data exists)
 ```
 
-bash python SVMandNeural.py``` 
+bash python SVMandNeural.py
+``` 
 This prints classification reports that show how well the models predict:
 - Label (Normal vs Malicious)
 - Traffic Type (category of traffic)
@@ -85,20 +94,23 @@ Only do this if you want to start from the original big file.
 2) Make a smaller sample (about 1% of the original)
 ```
 
-bash python SampledAnalysis.py``` 
+bash python SampledAnalysis.py
+``` 
 Produces: data_sampled.csv
 
 3) Create clustered representative datasets (even smaller)
 - KMeans:
 ```
 
-bash python KClustering.py``` 
+bash python KClustering.py
+``` 
 Produces: data_clustered.csv
 
 - Agglomerative:
 ```
 
-bash python AgglomerativeClustering.py``` 
+bash python AgglomerativeClustering.py
+``` 
 Produces: data_clustered_agglomerative.csv
 
 Note: For very large data, these steps can use a lot of memory. If you hit limits, reduce the number of clusters or subsample size inside the scripts.
@@ -131,7 +143,8 @@ You’ll see numbers like “accuracy,” “precision,” “recall,” and “
 - Install with:
 ```
 
-bash pip install -r requirements.txt``` 
+bash pip install -r requirements.txt
+``` 
 
 ## Credits
 
